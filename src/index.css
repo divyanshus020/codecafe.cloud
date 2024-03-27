@@ -6,4 +6,74 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+
+/* navbar code */
+
+.nav-container-1{
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    width: 100%;
+    /* height: 100vh; */
+    /* background-color: aquamarine; */
+}
+
+nav{
+    background: #fff;
+    border-radius:50px;
+    /* border: 2px solid red; */
+    margin-top: 20px;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0,0.4);
+}
+
+nav ul li{
+    display: inline-block;
+    padding: 13px 35px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+nav ul li::after {
+    content: '';
+    background:#f44566;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s , opacity 0.5s;
+}
+
+nav ul li:hover{
+    color: white;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+/* navbar end  */
+
+
+/* HomeLanding */
+
+.HomeLanding-1{
+    background: url(./assets/Creative\ Conference\ Website\ Template\ WIX.mp4);
+    width: 100%;
+    height: 100vh;
 }
