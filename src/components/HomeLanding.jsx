@@ -19,15 +19,16 @@ function HomeLanding() {
                     <div class="hero absolute top-[300px] right-40">
                         <div class="hero-text">
                             <div className='bg-[#760fcb]'>
-                                <h1>
-                                    CodeCafe:<br /> Ignite Your Passion.</h1>
+                                <h1 className=''>
+                                    CodeCafe:<br /> Ignite Your Passion.
+                                </h1>
                             </div>
 
                             <div className='bg-white'>
                                 <p>Elevate your programming skills, solve challenges, and unlock the world of coding possibilities.</p>
                             </div>
-                            
-                            <Btn/>
+
+                            <Btn />
                         </div>
                         <div class="hero-image">
                             {/* <!-- Add your hero image here --> */}

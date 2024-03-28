@@ -4,7 +4,7 @@ import { useLocation } from "react-router-dom";
 function Navbar() {
     return (
         <div>
-            <div className='nav-container-1 '>
+            <div className='nav-container-1'>
                 <nav>
                     <ul>
                         <Link to="/">
@@ -16,6 +16,12 @@ function Navbar() {
                         <Link to="/Course">
                             <li>
                                 Course
+                            </li>
+                        </Link>
+
+                        <Link to="/Lab">
+                            <li>
+                                Services
                             </li>
                         </Link>
 
@@ -31,12 +37,6 @@ function Navbar() {
                             </li>
                         </Link>
 
-                        <Link to="/Lab">
-                            <li>
-                                Lab
-                            </li>
-                        </Link>
-                        
                     </ul>
                 </nav>
             </div>

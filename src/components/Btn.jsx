@@ -2,7 +2,7 @@ import React from 'react'
 
 function Btn() {
     return (
-        <div className='mt-2'>
+        <div className='flex justify-center pb-2 bg-white'>
             <div>
                 <button class="btn-53">
                     <div class="original">Login</div>
