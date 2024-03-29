@@ -283,4 +283,14 @@ nav ul li:hover::after{
   transition-delay: 0.5s;
 }
 
+/* btn end */
+
+
+/* contact page */
+
+.backround-contact{
+    background-image: url("./assets/CodeCafe.png");
+    background-size: cover;
+    background-position: center;
+}
 
