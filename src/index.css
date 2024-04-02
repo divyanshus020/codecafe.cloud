@@ -1,6 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Suez+One&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+
+
 
 *{
     margin: 0;
@@ -373,3 +379,33 @@ nav ul li:hover::after{
   }
 
   /* loading end  */
+
+
+  /* about page */
+
+  .bg-about{
+    background-image: url("./assets/about.png");
+    
+    width: 100%;
+    /* background-position: center; */
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  
+  .about-head{
+    font-family: "Suez One", serif;
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+  }
+
+  .aboutname{
+    font-family: "Suez One", serif;
+  }
+
+
+
+  .herobg1{
+    background-image: url("./assets/herobg1.png");
+  }

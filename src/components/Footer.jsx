@@ -46,7 +46,7 @@ function Footer() {
                             </path>
                         </svg>
                             <p class="font-medium text-white text-shark-300 group-hover:text-indigo-500">
-                                <a href="mailto:sharmadivyanshu281@gmail.coms.in">sharmadivyanshu281@gmail.com</a>
+                                <a href="mailto:codecafe.in@hotmail.com">codecafe.in@hotmail.com</a>
                             </p>
                         </div>
                     </div>
