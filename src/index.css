@@ -409,3 +409,10 @@ nav ul li:hover::after{
   .herobg1{
     background-image: url("./assets/herobg1.png");
   }
+
+  /* course page */
+
+
+  .BFG{
+    background-image: url("./assets/bfg.png");
+  }
