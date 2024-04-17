@@ -1,6 +1,7 @@
 // import './App.css'
 import React from 'react'
 import Navbar from './components/Navbar'
+import Mern from './components/mernstack'
 import Home from './pages/Home'
 import Contact from './pages/Contact'
 import About from './pages/About'
@@ -29,6 +30,10 @@ function App() {
     {
       path: "ServicesPage",
       element: <><Navbar /><ServicesPage/></>
+    },
+    {
+      path:"mernstack",
+      element:<><Navbar/><Mern/></>
     }
 
   ])

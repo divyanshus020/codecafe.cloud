@@ -1,4 +1,9 @@
 import React from 'react';
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
+
+
 const courses = [
 
     //  this is just for a object
@@ -9,7 +14,8 @@ const courses = [
         description: 'MERN stack course: Learn MongoDB, Express.js, React.js, and Node.js for full-stack web development.',
         duration: '6 Months',
         level: 'Beginner - Advanced',
-        image: 'https://ih1.redbubble.net/image.671768090.8609/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg'
+        image: 'https://ih1.redbubble.net/image.671768090.8609/pp,840x830-pad,1000x1000,f8f8f8.u1.jpg',
+        route: "/mernstack"
     },
     {
         id: 2,
@@ -54,6 +60,7 @@ const courses = [
 ];
 
 const Course = () => {
+    const nevigate = useNavigate();
     return (
         <div className="container mx-auto px-4 py-8">
             <div className="bg-white rounded-lg shadow-lg p-8">
@@ -66,9 +73,9 @@ const Course = () => {
             </div>
             <h1 className="text-[36px] aboutname text-purple-600 font-bold text-center mb-10 mt-20">
                 "Explore Our Diverse Course Catalog"</h1>
-            <div className=" BFG grid rounded-lg shadow-lg p-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+            <div className=" BFG grid rounded-lg shadow-lg p-10 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
                 {courses.map(course => (
-                    <div key={course.id} className="bg-white shadow-lg rounded-md overflow-hidden">
+                    <div key={course.id} className="bg-white shadow-lg rounded-md overflow-hidden hover:scale-105 transition duration-300">
                         <img src={course.image} alt={course.title} className="w-full h-48 object-cover" />
                         <div className="p-4">
                             <h2 className="text-xl font-semibold mb-2">{course.title}</h2>
@@ -76,7 +83,14 @@ const Course = () => {
                             <div className="flex items-center justify-between">
                                 <p className="text-gray-500">{course.duration}</p>
                                 <p className="text-gray-500">{course.level}</p>
+                                
+                                <div>
+                                    <button onClick={()=>{
+                                        nevigate(course.route)
+                                    }}>Buy Now</button>
+                                </div>
                             </div>
+                            
                         </div>
                     </div>
                 ))}
