@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
+import { Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 // import WebIcon from '../assets/webpage.png'
-
 import Web1 from "../assets/web1.png"
 import Mobe from "../assets/mobe.png"
 import AI from "../assets/ai.png"
@@ -86,7 +87,9 @@ const ServicesComp = () => {
                 </div>
               </div>
               <p className="text-gray-600 mb-6">{service.description}</p>
-              <a href="#" className="inline-block px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">Learn More</a>
+              <Link to="/Contact">
+                <a className="inline-block cursor-pointer px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600 transition duration-300">Learn More</a>
+              </Link>
             </div>
           </div>
         ))}
