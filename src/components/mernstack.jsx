@@ -2,15 +2,15 @@ import React from 'react';
 import MernTime from './Merntime';
 import { Link } from "react-router-dom";
 import Mern from '../assets/MernCourse.png'
+import VortexDemo from './Vortex'
+import WavyBackgroundDemo from './Wavy'
 const Mernstack = () => {
     return (
         <div>
+            <WavyBackgroundDemo />
             <div className="min-h-screen flex items-center justify-center">
                 <div className="container mx-auto p-8">
-                    <h1 className="text-4xl font-bold text-center mb-12 text-purple-700">
-                        MERN Stack Course Overview by CodeCafe
-                    </h1>
-
+                
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
                         {/* Left Column */}
                         <div className="p-8 rounded-lg shadow-md hover:shadow-xl transition-shadow duration-300">
