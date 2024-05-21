@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import { useLocation } from "react-router-dom";
+// import ThemeToggle from './ThemeToggle';
 function Navbar() {
     return (
         <div>
@@ -36,7 +37,7 @@ function Navbar() {
                                 Contact
                             </li>
                         </Link>
-
+                        
                     </ul>
                 </nav>
             </div>

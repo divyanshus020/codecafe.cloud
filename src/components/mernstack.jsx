@@ -1,13 +1,15 @@
 import React from 'react';
 import MernTime from './Merntime';
+// import AuroraBackgroundDemo from './Aura';
 import { Link } from "react-router-dom";
 import Mern from '../assets/MernCourse.png'
 import VortexDemo from './Vortex'
 import WavyBackgroundDemo from './Wavy'
+import TracingBeamDemo from './TrackBeam'
 const Mernstack = () => {
     return (
         <div>
-            <WavyBackgroundDemo />
+            <WavyBackgroundDemo/>
             <div className="min-h-screen flex items-center justify-center">
                 <div className="container mx-auto p-8">
                 
@@ -68,11 +70,13 @@ const Mernstack = () => {
                     </div>
 
                     {/* Roadmap */}
-                    <div className="mt-16">
+                    <div className="mt-16 mb-10">
                         <h2 className="text-2xl font-semibold mb-6 text-purple-700">Course Roadmap</h2>
                         {/* Call your Roadmap component here */}
 
-                        <MernTime />
+                        {/* <MernTime /> */}
+
+                        <TracingBeamDemo/>
                     </div>
 
                     {/* FAQ */}

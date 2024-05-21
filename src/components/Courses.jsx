@@ -23,7 +23,8 @@ const courses = [
         description: 'Blender CodeCafe Launch: Exciting new course unveiling the power of Blender for 3D modeling and animation enthusiasts. Join the revolution!    ',
         duration: '2 months',
         level: 'Coming soon',
-        image: 'https://logos-world.net/wp-content/uploads/2023/05/Blender-Logo.png'
+        image: 'https://logos-world.net/wp-content/uploads/2023/05/Blender-Logo.png',
+        route:"/blander"
     },
     {
         id: 3,
@@ -31,7 +32,8 @@ const courses = [
         description: 'CodeCafe Autocad Course Launch: Explore the world of AutoCAD with our comprehensive course designed for aspiring designers and engineers.',
         duration: '5 weeks',
         level: 'Coming soon',
-        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4q-m_5Crn6gYKsq31vu0trfT5f0OW72QWd6yvp9otw&s'
+        image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4q-m_5Crn6gYKsq31vu0trfT5f0OW72QWd6yvp9otw&s',
+        route:"/autocad"
     },
     {
         id: 4,
