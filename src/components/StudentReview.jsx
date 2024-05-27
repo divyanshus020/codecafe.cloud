@@ -22,7 +22,10 @@ const StudentReview = () => {
 
     return (
         <>
-        <h1 className='text-center pb-10 text-[36px] font-bold aboutname text-purple-600 '>Students Review</h1>
+        <h1 className='text-center text-4xl mb-4 font-bold text-purple-700 sm:text-4xl md:text-5xl lg:text-6xl'>Students Review</h1>
+        <div className='w-full flex justify-center mb-10'>
+        <hr  className='w-[30%] border-2'/>
+        </div>
             <div className="max-w-lg mx-auto">
                 <Transition
                     show={true}

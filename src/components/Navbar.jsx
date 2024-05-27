@@ -1,48 +1,39 @@
-import React from 'react'
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { useLocation } from "react-router-dom";
-// import ThemeToggle from './ThemeToggle';
-function Navbar() {
-    return (
-        <div>
-            <div className='nav-container-1 pb-5'>
-                <nav>
-                    <ul>
-                        <Link to="/">
-                            <li>
-                                Home
-                            </li>
-                        </Link>
+ // Assuming you have this CSS file for styling
+const NavBar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-                        <Link to="/CoursePage">
-                            <li>
-                                Course
-                            </li>
-                        </Link>
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
 
-                        <Link to="/ServicesPage">
-                            <li>
-                                Services
-                            </li>
-                        </Link>
-
-                        <Link to="/About">
-                            <li>
-                                About us
-                            </li>
-                        </Link>
-
-                        <Link to="/Contact">
-                            <li>
-                                Contact
-                            </li>
-                        </Link>
-                        
-                    </ul>
-                </nav>
-            </div>
+  return (
+    <div className="nav-container-1 pb-5">
+      <nav>
+        <div className="menu-btn" onClick={toggleMenu}>
+          ☰
         </div>
-    )
-}
+        <ul className={isMenuOpen ? "open" : ""}>
+          <Link to="/" onClick={() => setIsMenuOpen(false)}>
+            <li>Home</li>
+          </Link>
+          <Link to="/CoursePage" onClick={() => setIsMenuOpen(false)}>
+            <li>Course</li>
+          </Link>
+          <Link to="/ServicesPage" onClick={() => setIsMenuOpen(false)}>
+            <li>Services</li>
+          </Link>
+          <Link to="/About" onClick={() => setIsMenuOpen(false)}>
+            <li>About us</li>
+          </Link>
+          <Link to="/Contact" onClick={() => setIsMenuOpen(false)}>
+            <li>Contact</li>
+          </Link>
+        </ul>
+      </nav>
+    </div>
+  );
+};
 
-export default Navbar
+export default NavBar;

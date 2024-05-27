@@ -1,5 +1,5 @@
 // import './App.css'
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 
 import Navbar from './components/Navbar'
 import Mern from './components/mernstack'
@@ -12,6 +12,7 @@ import CoursePage from './pages/CoursePage'
 import ServicesPage from './pages/ServicesPage'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Autocad from './components/Autocad'
+import Loading from './pages/Loading'
 
 function App() {
   const router = createBrowserRouter([
@@ -51,9 +52,9 @@ function App() {
   ])
   return (
     <>
-
-      <RouterProvider router={router} />
   
+      <RouterProvider router={router} />
+
     </>
   )
 }

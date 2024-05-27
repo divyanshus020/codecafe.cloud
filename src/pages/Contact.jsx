@@ -96,7 +96,7 @@ function Contact() {
                                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 22 22" class="w-8 h-8 fill-white group-hover:fill-indigo-500"><path d="m1.895 5.026 8.136 8.136c.504.503 1.3.534 1.84.094l.105-.094 8.13-8.13q.04.15.054.308l.007.16v11c0 .967-.748 1.759-1.697 1.829l-.137.005H3.667a1.833 1.833 0 0 1-1.829-1.697l-.005-.137v-11q0-.165.028-.32zm16.438-1.359q.167 0 .326.029l.155.035-7.81 7.81L3.192 3.73q.15-.041.312-.055l.163-.007z"></path>
                                         </svg>
                                     </div>
-                                    <p class="text-center">sharmadivyanshu281@gmail.com</p>
+                                    <p class="text-center">codecafe.in@hotmail.com</p>
                                 </div>
                             </div>
                             <div className='flex items-center gap-5 text-xl md:text-3xl'>

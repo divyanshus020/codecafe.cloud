@@ -1,6 +1,18 @@
 import React from 'react'
 import Btn from './Btn'
+import HomeScroll from './HomeScroll'
 import LandingVideo from "../assets/landing.mp4"
+import Sticky from "../components/sticky"
+import TabsDemo from './Scroling'
+import BackgroundVideo from './whyus'
+import BackgroundBeamsDemo from './beams'
+import Mission from './mission'
+import Globe from './globe'
+import TextGen from './textgen'
+import Bento from './grid'
+import Pin from './Pin'
+import ContactUs from './ContactUs'
+import StudentReview from '../components/StudentReview'
 function HomeLanding() {
     return (
         <>
@@ -35,9 +47,58 @@ function HomeLanding() {
                         </div>
                     </div>
                 </main>
+
+                <main className='relative w-full  bg-white py-10 '>
+                    <div className='text-4xl sm:text-5xl md:text-6xl lg:text-8xl text-center font-extrabold mb-7 mt-10 text-gray-400'>
+                        <h1>OUR OFFERINGS
+                        </h1>
+                    </div>
+
+                    <div className='text-2xl sm:text-3xl md:text-4xl lg:text-5xl text-center font-extrabold mb-7 mt-10 text-purple-700'>
+                        <h2>Job Bootcamp
+                            For professionals
+                        </h2>
+                    </div>
+                    <HomeScroll />
+
+                    <div>
+                        <Sticky />
+                    </div>
+
+                    <div>
+                        <TabsDemo />
+                    </div>
+
+                    <div>
+                        <BackgroundVideo />
+                        {/* <BackgroundBeamsDemo/> */}
+                    </div>
+
+                    <div className=''>
+                        <Mission />
+                    </div>
+
+                    <div className='mt-10 border-2 p-20 bg-black'>
+                        <TextGen />
+                    </div>
+
+                    <div className='my-40'>
+                        <Bento />
+                    </div>
+
+
+                    <div className='my-40'>
+                        <StudentReview />
+                    </div>
+
+                    <div className='my-40'>
+                        {/* <Pin/> */}
+                        {/* <ContactUs/> */}
+                    </div>
+
+
+                </main>
             </section>
-
-
         </>
     )
 }
