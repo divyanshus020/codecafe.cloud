@@ -693,5 +693,4 @@ nav ul li:hover::after {
     background: url("./assets/comp4.gif");
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
   }
