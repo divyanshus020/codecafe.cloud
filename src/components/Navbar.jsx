@@ -32,7 +32,7 @@ const NavBar = () => {
           </Link>
         </ul>
       </nav>
-    </div>
+    </div>  
   );
 };
 

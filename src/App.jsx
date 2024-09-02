@@ -10,9 +10,11 @@ import Contact from './pages/Contact'
 import About from './pages/About'
 import CoursePage from './pages/CoursePage'
 import ServicesPage from './pages/ServicesPage'
+import Privacy from './pages/Privacy'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Autocad from './components/Autocad'
 import Loading from './pages/Loading'
+import Career from './pages/carrer'
 
 function App() {
   const router = createBrowserRouter([
@@ -47,6 +49,14 @@ function App() {
     {
       path: "autocad",
       element: <><Navbar /><Autocad /></>
+    },
+    {
+      path: "career",
+      element: <><Navbar /><Career /></>
+    },
+    {
+      path: "Privacy",
+      element: <><Navbar /><Privacy /></>
     }
 
   ])

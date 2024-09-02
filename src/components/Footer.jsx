@@ -1,5 +1,6 @@
 import React from 'react'
 import Logo from "../assets/logo.png"
+import { Link } from "react-router-dom";
 function Footer() {
     return (
         <footer className=' relative min-h-[280px] px-8 w-full mx-auto py-8 bg-[#760fcb]'>
@@ -23,6 +24,10 @@ function Footer() {
                                 <p class="text-sm font-normal text-white text-shark-300 hover:text-indigo-500">Labs</p>
                             </a>
                             <a href="/contact"><p class="text-sm font-normal text-shark-300 text-white hover:text-indigo-500">Contact</p></a>
+
+                            <Link to="/career">
+                                <a href="/contact"><p class="text-sm font-normal text-shark-300 text-white hover:text-indigo-500">Carrer</p></a>
+                            </Link>
                         </div>
                     </div>
                     <div class="flex flex-col gap-y-3 text-center text-base md:text-left">
