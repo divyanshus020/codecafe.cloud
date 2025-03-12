@@ -69,10 +69,10 @@ function HomeLanding() {
                         <TabsDemo />
                     </div>
 
-                    <div>
+                    {/* <div>
                         <BackgroundVideo />
                         {/* <BackgroundBeamsDemo/> */}
-                    </div>
+                    {/* </div>  */}
 
                     <div className=''>
                         <Mission />

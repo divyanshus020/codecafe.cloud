@@ -35,30 +35,7 @@ const courses = [
         image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTw4q-m_5Crn6gYKsq31vu0trfT5f0OW72QWd6yvp9otw&s',
         route:"/autocad"
     },
-    {
-        id: 4,
-        title: 'Adobe Illustrator',
-        description: 'CodeCafe Adobe Illustrator Course Launch: Unleash your creativity with our comprehensive course for aspiring graphic designers.',
-        duration: '10 weeks',
-        level: 'Coming soon',
-        image: 'https://www.syntaxworld.in/assets/svg-image/adobe-illustrator-course.png'
-    },
-    {
-        id: 5,
-        title: 'Figma',
-        description: 'CodeCafe Figma Course Launch: Dive into the world of UI/UX design with our comprehensive Figma course. Join us and unleash your creativity!',
-        duration: '12 weeks',
-        level: 'Coming soon',
-        image: 'https://wptavern.com/wp-content/uploads/2018/11/Screen-Shot-2018-11-19-at-8.43.27-PM.png'
-    },
-    {
-        id: 6,
-        title: 'Interview Preparation',
-        description: 'CodeCafe Interview Preparation Launch: Elevate your career prospects with our comprehensive interview preparation course.',
-        duration: '2 weeks',
-        level: 'Coming soon',
-        image: 'https://resources.workable.com/wp-content/uploads/2018/05/prepare-interviews-featured.png'
-    }
+    
 ];
 
 const Course = () => {

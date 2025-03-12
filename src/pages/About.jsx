@@ -1,7 +1,7 @@
 import React from 'react'
 import { useState } from 'react'
 import Footer from '../components/Footer'
-import Photo1 from '../assets/Photo1.jpg'
+import Photo1 from '../assets/Founder.webp'
 import Team from '../assets/team.mp4'
 import Vision from '../assets/vision.mp4'
 import Sai from '../assets/company/sai.png'
@@ -19,7 +19,7 @@ function About() {
 
     return (
         <>
-            <div className="bg-gray-100 min-h-screen bg-about">
+            <div className="bg-gray-100 min-h-screen bg-about mt-20">
                 <div className="container mx-auto py-12">
                     <div className="text-center mb-8">
                         <h1 className="text-4xl  aboutname font-bold text-purple-700 mb-2">About CodeCafe</h1>
@@ -48,8 +48,8 @@ function About() {
                     </div>
 
                     <div className="flex flex-wrap justify-center -mx-4 ">
-                        <div className="w-full lg:w-[27.1vw] px-4 mb-8">
-                            <img src={Photo1} alt="Founder" className="rounded-lg shadow-lg w-full" />
+                        <div className="w-full lg:w-1/3 px-4 mb-8">
+                            <img src={Photo1} alt="Founder" className="rounded-lg shadow-lg w-full h-full object-cover" />
                         </div>
                         <div className="w-full lg:w-1/2 px-4 mb-8">
                             <div className="bg-white  rounded-lg shadow-lg p-8">

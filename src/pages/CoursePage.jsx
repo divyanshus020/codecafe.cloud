@@ -6,7 +6,7 @@ import Footer from "../components/Footer";
 function CoursePage() {
     return (
         <>
-            <div className="mb-10 bg-about">
+            <div className="mt-20 bg-about">
                 <Course />
             </div>
             <Footer />

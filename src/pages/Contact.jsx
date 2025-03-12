@@ -3,7 +3,7 @@ import Footer from '../components/Footer'
 function Contact() {
     return (
         <div className=''>
-            <div className='class="animate__animated animate__fadeIn animate__fast '>
+            <div className='class="animate__animated animate__fadeIn animate__fast mt-20 '>
                 <div className='relative h-fit w-[100%] overflow-hidden bg-[#000] '>
                     <div className='backround-contact sm:h-[65vh] h-[50vh] w-full opacity-40 flex items-center'>
                         <div className='absolute sm:top-1/3 top-1/4 left-0 w-full text-[#fff]'>
